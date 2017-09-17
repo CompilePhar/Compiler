@@ -12,6 +12,7 @@ class Compiler extends PluginBase implements Listener {
 	$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	
 	$this->getServer()->dispatchCommand(new ConsoleCommandSender(), "makeserver");
+	$this->getServer()->dispatchCommand(new ConsoleCommandSender(), "stop");
   }
   
 }
